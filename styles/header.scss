@@ -1,0 +1,124 @@
+@import "multibrowsing";
+
+$back-color: #f2f2ff;
+$content-color: #2c3f55;
+$content-padding-height: 28px;
+$content-padding-width: 23px;
+
+$header-height: 42px;
+$header-color: #6385ab;
+
+$logo-color: white;
+$logo-margin-left: 15px;
+$logo-size: 21pt;
+$logo-line-height: 38px;
+
+$button-text-color: white;
+$button-color: #81a3c9;
+$button-margin-height: 5px;
+$button-margin-width: 8px;
+$button-font-size: 19px;
+$button-radius: 6px;
+$button-line-height: 30px;
+$button-padding-width: 9px;
+$button-height: $header-height - 2 * ($button-margin-height);
+
+$image-margin: 2px;
+
+h2 {
+  display: inline;
+  width: auto;
+}
+
+body {
+}
+
+div.content {
+  margin-top: $header-height;
+  padding-top: $content-padding-height;
+  padding-left: $content-padding-width;
+  padding-right: $content-padding-width;
+  color: $content-color;
+  height: auto;
+  position: absolute;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+}
+
+div.header {
+  float: left;
+  position: fixed;
+  top: 0;
+  height: $header-height;
+  width: 100%;
+  background-color: $header-color;
+  z-index: 9999;
+}
+
+a.logo {
+  display: block;
+  float: left;
+  color: $logo-color;
+  font-size: $logo-size;
+  line-height: $logo-line-height;
+  margin-left: $logo-margin-left;
+}
+
+.button {
+  display: block;
+  margin: $button-margin-height;
+  margin-right: $button-margin-width;
+  padding-left: $button-padding-width;
+  padding-right: $button-padding-width;
+  width: auto;
+  background-color: $button-color;
+  border-radius: $button-radius;
+  color: $button-text-color;
+  height: $button-height;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+}
+
+a.enter {
+  @extend .button;
+  float: right;
+}
+
+a.registration {
+  @extend .button;
+  float: right;
+}
+
+a.exit {
+  @extend .button;
+  float: right;
+  background-color: $back-color;
+  padding: 0;
+}
+
+img.exit {
+  display: block;
+  margin: $image-margin;
+  width: $button-height - 2 * $image-margin;
+  height: $button-height - 2 * $image-margin;
+}
+
+a.user {
+  @extend .button;
+  float: right;
+  padding: 0 $button-padding-width 0 0;
+}
+
+div.user-logo {
+  float: left;
+  margin-right: $button-padding-width;
+  height: $button-height;
+  border-radius: $button-radius 0 0 $button-radius;
+  background-color: $back-color;
+}
+
+img.user {
+  @extend img.exit;
+}

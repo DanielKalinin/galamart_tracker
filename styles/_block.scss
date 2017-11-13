@@ -1,0 +1,42 @@
+@import "multibrowsing";
+
+
+.block {
+  border: $block-border-width solid $block-border-color;
+  border-radius: $block-border-radius;
+  width: $block-width;
+  margin-bottom: $block-margin-bottom;
+  margin-right: $block-margin-right;
+  height: auto;
+}
+
+.block-name {
+  margin: -$block-border-width;
+  border-radius: $block-border-radius $block-border-radius 0 0;
+  background-color: $block-border-color;
+  width: $block-width + 2 * $block-border-width - 2 * $block-name-padding-width;
+  padding: $block-name-padding-height $block-name-padding-width $block-name-padding-height $block-name-padding-width;
+  font-size: $block-name-size;
+  color: $block-name-color;
+}
+
+.internals {
+  padding: $block-padding-top $block-padding-width $block-padding-bottom $block-padding-width;
+}
+
+.element {
+  margin-top: $element-margin-top;
+  background-color: $element-color;
+  border-radius: $element-radius;
+  border: $element-border-size solid $element-color;
+  width: $block-width - 2 * $block-padding-width - 2 * $element-padding-width - 2 * $element-border-size;
+  padding: $element-padding-height $element-padding-width $element-padding-height $element-padding-width;
+  font-size: $element-font-size;
+  color: $element-font-color;
+}
+
+.adv-element {
+  @extend .element;
+  background-color: $adv-element-color;
+  border-color: $adv-element-color;
+}

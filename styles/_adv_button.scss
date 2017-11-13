@@ -1,0 +1,29 @@
+$adv-button-padding-width: 8px;
+$adv-button-padding-height: 6px;
+$adv-button-font-color: #272727;
+$adv-button-font-size: 16px;
+$adv-button-color: #e3e2e9;
+$adv-button-radius: 5px;
+$background-color: #f2f2ff !default;
+$adv-button-shadow-color: #c7cbca;
+$adv-border-size: 1px;
+
+
+.adv-button {
+  background-color: $adv-button-color;
+  padding: $adv-button-padding-height $adv-button-padding-width $adv-button-padding-height $adv-button-padding-width;
+  color: $adv-button-font-color;
+  font-size: $adv-button-font-size;
+  border-radius: $adv-button-radius;
+  width: auto;
+  height: auto;
+  border: $adv-border-size solid $adv-button-color;
+  border-bottom: $adv-border-size solid $adv-button-shadow-color;
+  border-right: $adv-border-size solid $adv-button-shadow-color;
+
+  &:hover {
+    border: $adv-border-size  solid $background-color;
+    border-bottom: $adv-border-size solid $adv-button-color;
+    border-right: $adv-border-size solid $adv-button-color;
+  }
+}

@@ -1,0 +1,91 @@
+$block-width: 230px;
+$block-margin-bottom: 28px;
+$block-margin-right: 30px;
+$block-padding-width: 12px;
+$block-padding-top: 7px;
+$block-padding-bottom: 12px;
+
+$block-border-width: 5px;
+$block-border-color: #6385ab;
+$block-border-radius: 10px;
+
+$block-name-size: 20px;
+$block-name-padding-width: 8px;
+$block-name-padding-height: 8px;
+$block-name-color: white;
+
+$element-color: #dddddd;
+$element-font-color: #272727;
+$element-font-size: 16px;
+$element-radius: 7px;
+$element-border-size: 2px;
+$element-padding-width: 8px - $element-border-size;
+$element-padding-height: 6px - $element-border-size;
+$element-margin-top: 10px;
+
+$adv-element-color: #cfd9e8;
+
+@import 'block';
+@import 'adv_button';
+
+$done-color: #a4cda8;
+$back-done-color: #c6dfc8;
+
+$create-margin: 30px;
+
+div.create {
+  margin-bottom: $create-margin;
+}
+
+a.create {
+  @extend .adv-button;
+}
+
+div.project {
+  @extend .block;
+  float: left;
+}
+
+div.city {
+  @extend .block-name;
+}
+
+div.stages {
+  @extend .internals;
+}
+
+a.delete {
+  display: block;
+  float: right;
+  color: $block-name-color;
+  margin-right: 3px;
+}
+
+div.stage {
+  @extend .element;
+  display: table;
+}
+
+a.stage {
+  @extend .element;
+  display: table;
+}
+
+a.stage.cur {
+  border-color: $done-color;
+}
+
+a.stage.done {
+  background-color: $back-done-color;
+  border-color: $back-done-color;
+}
+
+a.appoint {
+  @extend .adv-element;
+  display: block;
+}
+
+div.progress {
+  display: table-cell;
+  vertical-align: middle;
+}

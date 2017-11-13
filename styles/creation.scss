@@ -1,0 +1,44 @@
+@import 'adv_button';
+
+$back-margin-top: 25px;
+$back-padding-height: 4px;
+$back-padding-width: 6px;
+$back-font-size: 14px;
+
+$input-padding-height: 3px;
+$input-padding-width: 3px;
+$input-font-size: 14px;
+$input-margin-left: 6px;
+
+$div-padding-height: 17px;
+$div-padding-width: 22px;
+$div-border-radius: 4px;
+$div-border-size: 2px;
+$div-border-color: #cbdade;
+$div-color: #fbfaff;
+
+div.div {
+  float: left;
+  border-right: $div-border-size solid $div-border-color;
+  border-bottom: $div-border-size solid $div-border-color;
+  background-color: $div-color;
+  padding: $div-padding-height $div-padding-width $div-padding-height $div-padding-width;
+  border-radius: $div-border-radius;
+}
+
+div.back {
+  margin-top: $back-margin-top;
+}
+
+a.back {
+  @extend .adv-button;
+  padding: $back-padding-height $back-padding-width $back-padding-height $back-padding-width;
+  font-size: $back-font-size;
+}
+
+input[type="submit"] {
+  @extend .adv-button;
+  padding: $input-padding-height $input-padding-width $input-padding-height $input-padding-width;
+  font-size: $input-font-size;
+  margin-left: $input-margin-left;
+}

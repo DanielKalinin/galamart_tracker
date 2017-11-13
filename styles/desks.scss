@@ -1,0 +1,78 @@
+$block-width: 300px;
+$block-margin-bottom: 28px;
+$block-margin-right: 30px;
+$block-padding-width: 12px;
+$block-padding-top: 7px;
+$block-padding-bottom: 12px;
+
+$block-border-width: 5px;
+$block-border-color: #6385ab;
+$block-border-radius: 10px;
+
+$block-name-size: 20px;
+$block-name-padding-width: 8px;
+$block-name-padding-height: 8px;
+$block-name-color: white;
+
+$element-color: #dddddd;
+$element-font-color: #272727;
+$element-font-size: 16px;
+$element-radius: 7px;
+$element-border-size: 2px;
+$element-padding-width: 8px - $element-border-size;
+$element-padding-height: 6px - $element-border-size;
+$element-margin-top: 10px;
+
+$adv-element-color: #cfd9e8;
+
+@import 'block';
+@import 'adv_button';
+
+$back-done-color: #c6dfc8;
+$done-color: #a4cda8;
+$wait-color: rgba(249, 242, 94, 0.87);
+
+$back-margin: 30px;
+
+div.back {
+  margin-bottom: $back-margin;
+}
+
+a.back {
+  @extend .adv-button;
+}
+
+div.desk {
+  @extend .block;
+  float: left;
+}
+
+div.desk-name {
+  @extend .block-name;
+}
+
+div.cards {
+  @extend .internals;
+}
+
+div.card {
+  @extend .element;
+}
+
+a.card {
+  @extend .element;
+  display: block;
+}
+
+a.card.cur {
+  border-color: $done-color;
+}
+
+a.card.done {
+  background-color: $back-done-color;
+  border-color: $back-done-color;
+}
+
+a.card.wait {
+  border-color: $wait-color;
+}

@@ -1,0 +1,103 @@
+@import 'adv_button';
+
+$back-margin: 30px;
+
+div.back {
+  margin-bottom: $back-margin;
+}
+
+a.back {
+  @extend .adv-button;
+}
+
+$div-padding-height: 8px;
+$div-padding-width: 12px;
+$div-color: #fbfaff;
+$div-margin-height: 5px;
+$div-margin-width: 10px;
+$div-border-radius: 4px;
+$div-border-size: 2px;
+$div-border-color: #cbdade;
+$div-height: 85%;
+
+$input-padding-height: 3px;
+$input-padding-width: 5px;
+$input-font-size: 14px;
+$input-padding-bottom: 6px;
+$input-padding-top: 0;
+$input-padding-left: 4px;
+$input-padding-right: 4px;
+
+$card-padding-bottom: 15px;
+
+$status-padding-right: $div-padding-width + 2 * $input-padding-width;
+
+$name-padding: 8px;
+
+.div {
+  border-right: $div-border-size solid $div-border-color;
+  border-bottom: $div-border-size solid $div-border-color;
+  height: $div-height;
+  background-color: $div-color;
+  padding: $div-padding-height $div-padding-width $div-padding-height $div-padding-width;
+  margin: 0 $div-margin-width 0 $div-margin-width;
+  border-radius: $div-border-radius;
+}
+
+div.card-center-container {
+  text-align:center;
+}
+
+div.card-container {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+
+div.hidden {
+  width: 0;
+  height: 0;
+  background-color: $div-color;
+}
+
+div.task {
+  display: table;
+  overflow: hidden;
+  height: 100%;
+}
+
+div.inner {
+  display: table-cell;
+  height: 100%;
+}
+
+div.list {
+  @extend .div;
+  margin-left: 0;
+}
+
+div.status {
+  @extend .div;
+  padding-right: $status-padding-right;
+}
+
+div.card {
+  @extend .div;
+  padding-bottom: $card-padding-bottom;
+}
+
+div.chat {
+  clear: both;
+  display: inline;
+}
+
+input[type="submit"] {
+  @extend .adv-button;
+  padding: $input-padding-height $input-padding-width $input-padding-height $input-padding-width;
+  margin: $input-padding-top $input-padding-left $input-padding-bottom $input-padding-right;
+  font-size: $input-font-size;
+}
+
+h2 {
+  margin: $name-padding;
+}

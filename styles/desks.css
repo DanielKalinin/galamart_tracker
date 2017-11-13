@@ -1,0 +1,68 @@
+.block, div.desk {
+  border: 5px solid #6385ab;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 28px;
+  margin-right: 30px;
+  height: auto; }
+
+.block-name, div.desk-name {
+  margin: -5px;
+  border-radius: 10px 10px 0 0;
+  background-color: #6385ab;
+  width: 294px;
+  padding: 8px 8px 8px 8px;
+  font-size: 20px;
+  color: white; }
+
+.internals, div.cards {
+  padding: 7px 12px 12px 12px; }
+
+.element, .adv-element, div.card, a.card {
+  margin-top: 10px;
+  background-color: #dddddd;
+  border-radius: 7px;
+  border: 2px solid #dddddd;
+  width: 260px;
+  padding: 4px 6px 4px 6px;
+  font-size: 16px;
+  color: #272727; }
+
+.adv-element {
+  background-color: #cfd9e8;
+  border-color: #cfd9e8; }
+
+.adv-button, a.back {
+  background-color: #e3e2e9;
+  padding: 6px 8px 6px 8px;
+  color: #272727;
+  font-size: 16px;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  border: 1px solid #e3e2e9;
+  border-bottom: 1px solid #c7cbca;
+  border-right: 1px solid #c7cbca; }
+  .adv-button:hover, a.back:hover {
+    border: 1px solid #f2f2ff;
+    border-bottom: 1px solid #e3e2e9;
+    border-right: 1px solid #e3e2e9; }
+
+div.back {
+  margin-bottom: 30px; }
+
+div.desk {
+  float: left; }
+
+a.card {
+  display: block; }
+
+a.card.cur {
+  border-color: #a4cda8; }
+
+a.card.done {
+  background-color: #c6dfc8;
+  border-color: #c6dfc8; }
+
+a.card.wait {
+  border-color: rgba(249, 242, 94, 0.87); }

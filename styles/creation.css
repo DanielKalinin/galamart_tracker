@@ -1,0 +1,35 @@
+.adv-button, a.back, input[type="submit"] {
+  background-color: #e3e2e9;
+  padding: 6px 8px 6px 8px;
+  color: #272727;
+  font-size: 16px;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  border: 1px solid #e3e2e9;
+  border-bottom: 1px solid #c7cbca;
+  border-right: 1px solid #c7cbca; }
+  .adv-button:hover, a.back:hover, input[type="submit"]:hover {
+    border: 1px solid #f2f2ff;
+    border-bottom: 1px solid #e3e2e9;
+    border-right: 1px solid #e3e2e9; }
+
+div.div {
+  float: left;
+  border-right: 2px solid #cbdade;
+  border-bottom: 2px solid #cbdade;
+  background-color: #fbfaff;
+  padding: 17px 22px 17px 22px;
+  border-radius: 4px; }
+
+div.back {
+  margin-top: 25px; }
+
+a.back {
+  padding: 4px 6px 4px 6px;
+  font-size: 14px; }
+
+input[type="submit"] {
+  padding: 3px 3px 3px 3px;
+  font-size: 14px;
+  margin-left: 6px; }

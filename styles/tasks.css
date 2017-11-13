@@ -1,0 +1,70 @@
+.adv-button, a.back, input[type="submit"] {
+  background-color: #e3e2e9;
+  padding: 6px 8px 6px 8px;
+  color: #272727;
+  font-size: 16px;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  border: 1px solid #e3e2e9;
+  border-bottom: 1px solid #c7cbca;
+  border-right: 1px solid #c7cbca; }
+  .adv-button:hover, a.back:hover, input[type="submit"]:hover {
+    border: 1px solid #f2f2ff;
+    border-bottom: 1px solid #e3e2e9;
+    border-right: 1px solid #e3e2e9; }
+
+div.back {
+  margin-bottom: 30px; }
+
+.div, div.list, div.status, div.card {
+  border-right: 2px solid #cbdade;
+  border-bottom: 2px solid #cbdade;
+  height: 85%;
+  background-color: #fbfaff;
+  padding: 8px 12px 8px 12px;
+  margin: 0 10px 0 10px;
+  border-radius: 4px; }
+
+div.card-center-container {
+  text-align: center; }
+
+div.card-container {
+  display: inline-block;
+  height: auto;
+  width: auto; }
+
+div.hidden {
+  width: 0;
+  height: 0;
+  background-color: #fbfaff; }
+
+div.task {
+  display: table;
+  overflow: hidden;
+  height: 100%; }
+
+div.inner {
+  display: table-cell;
+  height: 100%; }
+
+div.list {
+  margin-left: 0; }
+
+div.status {
+  padding-right: 22px; }
+
+div.card {
+  padding-bottom: 15px; }
+
+div.chat {
+  clear: both;
+  display: inline; }
+
+input[type="submit"] {
+  padding: 3px 5px 3px 5px;
+  margin: 0 4px 6px 4px;
+  font-size: 14px; }
+
+h2 {
+  margin: 8px; }
